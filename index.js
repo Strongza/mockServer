@@ -3,6 +3,7 @@
 const express = require("express");
 const cors = require('cors') 
 const mockTest = require("./MoclFIle/test.json");
+const mockTestErr = require("./MoclFIle/test_err.json");
 
 const app = express();
 
@@ -29,7 +30,7 @@ app.get("/justforyou/api/test", (req, res) => {
 
 app.post("/justforyou/api/", (req,res) => {
   console.log(req);
-  res.json(mockTest)
+  res.json(mockTestErr)
 })
 const port = process.env.PORT || 64822;
 app.listen(port, () => console.log(`Listening on port${port}...`));
