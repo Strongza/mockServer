@@ -1,13 +1,12 @@
-
-
 const express = require("express");
-const cors = require('cors') 
+const cors = require("cors");
 const mockTest = require("./MoclFIle/test.json");
 const mockTestErr = require("./MoclFIle/test_err.json");
+const insight = require("./MoclFIle/insight.json");
 
 const app = express();
 
-app.use(cors())
+app.use(cors());
 
 app.use(express.json());
 
@@ -23,15 +22,23 @@ app.use(express.json());
 //   next();
 // });
 
-app.get("/justforyou/api/test", (req, res) => {
-  // console.log(res);
-  res.json(mockTest)
+app.use(function (req, res, next) {
+  console.log("method: " + req.method);
+  console.log("url: " + req.url);
+  console.log("body: " + JSON.stringify(req.body, null, 2));
+  next();
+});
+app.get("/v1/justforyou/insights/", (req, res) => {
+  res.json(insight);
 });
 
-app.post("/justforyou/api/", (req,res) => {
-  console.log(req);
-  res.json(mockTestErr)
-})
+app.get("/justforyou/api/test", (req, res) => {
+  // console.log(res);
+  res.json(mockTest);
+});
+
+app.post("/justforyou/api/", (req, res) => {
+  res.json(insight);
+});
 const port = process.env.PORT || 64822;
 app.listen(port, () => console.log(`Listening on port${port}...`));
-

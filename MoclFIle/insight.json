@@ -1,0 +1,39 @@
+{
+  "status": {
+    "code": 1000,
+    "header": "",
+    "description": "Success"
+  },
+  "data": {
+    "insightList": [
+      {
+        "sortSequence": 0,
+        "id": "00200",
+        "category": "reminder",
+        "displayCategory": "แจ้งเตือน",
+        "fromDate": "2019-04-12",
+        "toDate": "2019-04-14",
+        "header": "จ่ายบิลหรือยัง",
+        "body": "ปกติคุณชำระค่าไฟฟ้าทุกวันที่ 11 ของทุกเดือนใช่ไหม? เพื่อให้ชีวิตคุณยังเต็มไปด้วยความสว่างสดใส ลองตรวจสอบบิลค่าไฟฟ้าดูก่อนไหมว่าเดือนนี้ชำระไปหรือยัง เพราะเป็นห่วงจึงอยากบอก ขอบคุณหากคุณได้ชำระแล้ว",
+        "deeplinkLabel": null,
+        "deepLinkUrl": null,
+        "priority": 1,
+        "calculationDate": "2019-04-12"
+      },
+      {
+        "sortSequence": 1,
+        "id": "00300",
+        "category": "investment_tips",
+        "displayCategory": "คำแนะนำการลงทุน",
+        "fromDate": "2019-04-14",
+        "toDate": "2019-04-21",
+        "header": "มาลงทุนกันเถอะ",
+        "body": "คุณสามารถนำเงิน 15,000 บาทจากบัญชีออมทรัพย์มาลงทุนได้โดยไม่กระทบกับค่าใช้จ่ายปกติของคุณ สนใจลงทุนในกองทุนรวมตอนนี้เลยไหม?",
+        "deeplinkLabel": "ลงทุนตอนนี้",
+        "deepLinkUrl": "scbeasy://mutualfunds",
+        "priority": 2,
+        "calculationDate": "2019-04-14"
+      }
+    ]
+  }
+}
