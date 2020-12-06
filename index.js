@@ -1,9 +1,9 @@
 const express = require("express");
 const cors = require("cors");
-const mockTest = require("./MoclFIle/test.json");
-const mockTestErr = require("./MoclFIle/test_err.json");
-const insight = require("./MoclFIle/insight.json");
-const insightHeader = require("./MoclFIle/insightHeader.json");
+const mockTest = require("./MockFile/test.json");
+const mockTestErr = require("./MockFile/test_err.json");
+const insight = require("./MockFile/insight.json");
+const insightHeader = require("./MockFile/insightHeader.json");
 
 const app = express();
 
