@@ -18,7 +18,8 @@
         "deeplinkLabel": null,
         "deepLinkUrl": null,
         "priority": 1,
-        "calculationDate": "2019-04-12"
+        "calculationDate": "2019-04-12",
+        "todayFlag": "1"
       },
       {
         "sortSequence": 1,

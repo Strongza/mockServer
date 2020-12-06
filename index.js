@@ -3,6 +3,7 @@ const cors = require("cors");
 const mockTest = require("./MoclFIle/test.json");
 const mockTestErr = require("./MoclFIle/test_err.json");
 const insight = require("./MoclFIle/insight.json");
+const insightHeader = require("./MoclFIle/insightHeader.json");
 
 const app = express();
 
@@ -30,6 +31,10 @@ app.use(function (req, res, next) {
 });
 app.get("/v1/justforyou/insights/", (req, res) => {
   res.json(insight);
+});
+
+app.get("/v1/justforyou/insights/header", (req, res) => {
+  res.json(insightHeader);
 });
 
 app.get("/justforyou/api/test", (req, res) => {
